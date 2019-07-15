@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App using OpenWeatherMap.org API</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="txt-center">The Weather App</h1>
+    </header>
+    <main>
+        <form  class="container txt-center" id="search">
+            <label for="city">City Name</label>
+            <input type="text" id="city">
+            <button type="button">Show weather forecast!</button>
+        </form>
+        <div class="txt-center" id="load">Loading....</div>
+        <section class="container txt-center" id="weather">
+            <h2>City Name: <span id="weatherCity"></span></h2>
+            <p>Weather Description: <span class="weatherDesc"></span></p>
+            <p>City Temprature: <span class="weatherTemp"></span> </p>
+            <div class="switch" id="temp-unit-toggle">
+                <label>
+                    &#730;C 
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  &#730;F
+                </label>
+              </div>
+        </section>
+    </main>
+    <footer>
+        portfolio project by <span class="signature">Lauw</span>
+    </footer>
+    <script src="init.js"></script>
+    <script src="weather-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
